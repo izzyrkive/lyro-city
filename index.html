@@ -1,40 +1,99 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- SEO/title stuff is here -->
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Welcome to LyroCity!">
+    <meta name="keywords"
+    content="lyrics, song finder, music, find a song">
+    <title>LyroCity</title>
+
+    <!-- Google Fonts links! -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Moon+Dance&family=Press+Start+2P&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./Assets/style.css">
-    <title>LyroCity</title>
+
+    <!-- Font Awesome link! -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/437829e578.css" crossorigin="anonymous">
+
+    <!-- Linking CSS and Materialize framework -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
 </head>
 
-<body class = "body">
-    <h1 class = "heading">LyroCity</h1>
-    <form action = "/search" class = "search w-from"><input type = "search" class = "search-input" placeholder="Type what You Remember..">
-        <button type="submit"><i class="btnsearch">Let's Go!</i></button>
-    </form>
+<!-- Website body starts here -->
+<body>
 
+  <header>
+    <nav>
+        <img class="header__img" src="images/logo.jpg" alt="LyroCity logo" href="#"/>
+      <hr class="page-divider display-mobile" />
+      <div class="page-title top-nav__links justify-between align-items-center">
+        <a href="#about">About</a>
+        <a href="/pages/contact-form.html#contact">Contact</a>
+        <img src="/Assets/images/lc-logo.png" alt="LyroCity logo">
+      </div>
+    </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"></a>
- <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
-          </div>
-        </div>
-        <div class="logo">
-<img src="./Assets/images/lc-logo.png">
-</div>
-      </nav>
-     
+    <img src="/Assets/images/lyrocity-header.png" alt="LyroCity header logo">
+  </header>
 
-    </body>
+<!-- Main website content starts here -->
+
+  <main class="page-content">
+
+    <div class="search-box text-center">
+        <form action = "/search" class = "search w-from">
+            <input type = "text" name="search" id="search songLyrics" placeholder="Search lyrics & more">
+            <button type="submit" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+
+    <hr class="page-divider"/>
+
+    <div class="searchResults">
+        <ul>
+            <li>Search Result</li>
+            <li>Search Result</li>
+            <li>Search Result</li>
+        </ul>
+    </div>
+
+    <hr class="page-divider"/>
+
+    <div>
+        <ul>
+            <li>Spotify</li>
+            <li>Apple Music</li>
+            <li>Youtube</li>
+        </ul>
+    </div>
+
+    <hr class="page-divider"/>
+
+    <div>
+        <h3>Recent Searches</h3>
+        <!-- This area will display previous search results pulled from local storage -->
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+  </main>
+
+    <footer>
+    <p class="text-small text-center">&copy; <span class="text-italic">LyroCity, an application by Darius Holloway, Gabriel Enriquez, and Isabel Perez</span></p>
+  </footer>
+
+  <script></script>
+</body>
+
 </html>
