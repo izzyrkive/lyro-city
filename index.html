@@ -28,9 +28,9 @@
   <header class="header">
     <nav class="grey lighten-4">
       <div class="nav-wrapper">
-        <li><img class="logo" src="/assets/images/lc-logo.png" alt="LyroCity logo" href="#"/></li>
-        <ul id="nav-mobile" class="right hide-on-med-and-down right">
-          <li><a href="/assets/about.html" class="float-right active">About</a></li>
+        <a href="#" class="logo"><img class="logo" src="/assets/images/lc-logo.png" alt="LyroCity logo" href="#"/></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="about.html">About</a></li>
         </ul>
       </div>
     </nav>
@@ -42,43 +42,58 @@
 
     <img src="./Assets/images/lyrocity-header.png" class="logo-img " alt="LyroCity header logo">
 
-    <div class="search-box text-center">
-        <form action = "/search" class = "search-bar">
-            <input type = "text" name="search" id="search-input" placeholder="Search lyrics & more">
-            <button type="submit" class="search-button"></button>
-        </form>
+    <div>
+      <input type="search" id="query" name="q"
+       placeholder="Search..."
+       aria-label="Search through site content">
+      <button id="data">
+        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+      </button>
     </div>
 
     <hr class="page-divider"/>
 
-    <div class="searchResults">
-        <ul>
-            <li>Search Result</li>
-            <li>Search Result</li>
-            <li>Search Result</li>
-        </ul>
+    <div class="searchResults center container">
+      <table class="table table-bordered">
+        <tbody id="data">
+        </tbody>
+     </table>   
     </div>
 
     <hr class="page-divider"/>
 
     <div>
         <ul>
-            <li>Spotify</li>
-            <li>Apple Music</li>
-            <li>Youtube</li>
+            <li class="center-align">Spotify</li>
+            <li class="center-align">Youtube</li>
         </ul>
     </div>
 
     <hr class="page-divider"/>
 
     <div>
-        <h3>Recent Searches</h3>
         <!-- This area will display previous search results pulled from local storage -->
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+      <h4>Recent Searches</h4>
+
+          <table class="center">
+            <thead>
+              <tr>
+                  <th></th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
     </div>
 
   </main>
@@ -88,6 +103,7 @@
   </footer>
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="Assets/script.js"></script>
 </body>
 
 </html>
