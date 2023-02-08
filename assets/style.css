@@ -188,10 +188,11 @@ search-bar {
 }
 
 .logo-img {
-  width: 100%;
-  size: 480px;
-  padding-left: 60px;
-  padding-right: 60px;
+  width: 500px;
+  display: flex;
+margin-left: 30%;
+margin-right: 50%;
+  
 }
 
 .page-divider {
@@ -228,10 +229,42 @@ search-bar {
   margin-right: 20px;
 }
 
-.search-button {
-  border-radius: 50%;
-  color: white;
-  border:rgb(0, 0, 0)
+form {
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+svg {
+  color: rgb(0, 0, 0);
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+
+::placeholder {
+  color: rgb(141, 141, 141);
+  opacity: 0.7; 
 }
 
 /* Page Styles */
@@ -240,7 +273,13 @@ search-bar {
   margin: 30px 10px;
 }
 
-
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: #ffffff;
+}
 
 /***************** Footer Styles *****************/
 footer {
